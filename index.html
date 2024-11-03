@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo masa-resorte</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:ital,wght@0,200..800;1,200..800&family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <a href="#teoria">Marco teórico</a>
+            <a href="#ejercicios">Ejercicios</a>
+            <a href="#apa">Bibliografía</a>
+            <a href="#conclusion">Conclusión</a>
+        </nav>
+    </div>
+
+    <section class="home">
+        <div>
+
+            <div class="home-content">
+                <h1>Modelo Masa-Resorte</h1>
+                <h3>Práctica</h3>
+                <p style="text-align: justify;">Un bloque suspendido de un resorte se denomina sistema masa-resorte. Para obtener un sistema masa-resorte, consideramos una masa m. Se supone que la masa se desliza a lo largo de una superficie sin enfrentar fricción. El resorte está suspendido de una pared por un extremo. Luego, la masa está suspendida del extremo libre de un resorte.</p>
+                
+            <p style="color: #7b9fc9; font-size:20px;font-weight:500;">Integrantes:</p>
+            </div>
+
+            <div class="equipo">
+                <div class="integrante">
+                    Gretel Montiel Alva
+                </div>
+
+                <div class="integrante">
+                    Emiliano Netzahualcóyotl Giral
+                </div>
+        
+            </div>
+        
+        </div>
+        <img src="docs/resorte.png" alt="">
+    </section>
+
+<!-- Introducción -->
+
+    <h1 style="color: rgb(230, 174, 54); text-align:center; margin:50px;">Introducción</h1>
+    <div class="general">
+
+        <div class="container" style="margin: 5px;">
+            
+            <img src="docs/reso.png" alt="">
+        </div>
+
+        <div class="container" style="margin:5px;">
+            <p style="color:black">En un sistema masa-resorte, el periodo es proporcional a la raíz cuadrada de la masa e inversamente proporcional a la raíz cuadrada de la constante del resorte. La amplitud es la distancia máxima entre la masa y la posición de equilibrio. </p>
+            <p style="color:black">En un sistema masa-resorte, la energía potencial es máxima en los extremos del movimiento, mientras que la energía cinética es máxima en la posición de equilibrio. La energía mecánica es constante en todo el movimiento. </p>
+            <p style="color:black">Según la ley de Hooke, la fuerza restauradora del resorte es proporcional al desplazamiento y actúa en sentido contrario al desplazamiento, por lo que la fuerza restauradora viene dada por:
+                </p>
+                <p style="text-align: center;">
+                <strong>−k(s+x)</strong>.
+            </p>
+                <p style="color: black;">La constante del resorte se indica en libras por pie en el sistema inglés y en newtons por metro en el sistema métrico.</p>
+        </div>
+    </div>
+
+<!-- Marco teórico -->
+
+    <h1 style="color: rgb(230, 174, 54); text-align:center; margin:50px;" id="teoria">Marco teórico</h1>
+    <div class="container" >
+        
+        <div>
+            <p>El estudio de los sistemas masa-resorte es fundamental en la mecánica clásica y tiene aplicaciones en diversas áreas de la física y la ingeniería. Este sistema describe el movimiento armónico simple (MAS) de un objeto bajo la acción de fuerzas restauradoras elásticas, lo que permite analizar fenómenos vibratorios y oscilatorios.</p>
+            <br>
+            <h3>Ley de Hooke y Movimiento Armónico Simple </h3>
+            <p>La Ley de Hooke establece que la fuerza restauradora F que actúa sobre un objeto en un resorte es proporcional al desplazamiento x respecto al punto de equilibrio y se expresa como:
+            </p>
+            <br>
+            <p>
+                F = − k x
+            </p>
+
+            <ul>
+            donde:
+            <li >k es la constante de elasticidad del resorte, y</li>
+            <li >x es el desplazamiento desde la posición de equilibrio.</li>
+            </ul>
+            </p>
+            <br>
+            <p>
+            Este principio es crucial para definir el comportamiento oscilatorio de sistemas masa-resorte. El movimiento resultante, conocido como Movimiento Armónico Simple (MAS), es descrito por ecuaciones diferenciales de segundo orden que relacionan la posición, la velocidad y la aceleración del objeto en función del tiempo.
+            </p>
+
+            <h3>Ecuación Diferencial del Sistema Masa-Resorte</h3>
+            <p>El sistema masa-resorte sin amortiguamiento se modela mediante la ecuación diferencial:</p>
+            <img src="docs/ecu.jpg" alt="" style="width: 100px;">
+            
+            <ul>
+            donde:
+            <li >k es la constante de elasticidad del resorte, y</li>
+            <li >x es el desplazamiento desde la posición de equilibrio.</li>
+            </ul>
+            <p>La solución de esta ecuación es una función oscilatoria que puede expresarse en términos de funciones seno y coseno, caracterizando un movimiento periódico con una frecuencia angular ω=km.</p>
+
+            <h3>Transformada de Laplace en Sistemas Dinámicos</h3>
+            <p>La transformada de Laplace es una herramienta matemática que se utiliza para resolver ecuaciones diferenciales con condiciones iniciales. En el análisis de sistemas masa-resorte, se emplea para simplificar la ecuación diferencial, transformándola en una ecuación algebraica en el dominio de s, facilitando así la solución.
+            </p>
+            <p>Al aplicar la transformada de Laplace a la ecuación del sistema masa-resorte, se obtiene una representación que permite resolver para la posición x(t) y la velocidad v(t) mediante la transformada inversa. Este método es valioso en el análisis de sistemas mecánicos y eléctricos, ya que proporciona un enfoque sistemático para manejar problemas complejos de oscilación y amortiguamiento.
+            </p>
+
+            <h3>Análisis de las Condiciones Iniciales y Soluciones</h3>
+            <p>El comportamiento del sistema depende de las condiciones iniciales, como la posición inicial x(0) y la velocidad inicial v(0). Estas condiciones determinan la amplitud y la fase del movimiento oscilatorio. En problemas prácticos, como el expuesto en el documento, se calcula la constante del resorte utilizando las condiciones de equilibrio, y se predicen la posición y la velocidad del objeto en instantes específicos usando las soluciones obtenidas.</p>
+
+        </div>
+    </div>
+
+    <!-- Problemática -->
+    <div class="section">
+        <h1 style="color: rgb(230, 174, 54); text-align:center; margin:30px;" id="ejercicios">Problemática y resultados</h1>
+
+        <div class="container">
+            <h1>Ejercicio 1</h1>
+            <p>Un resorte cuelga verticalmente con su extremo superior fijo, y de su extremo inferior cuelga un objeto de masa 15 kg. 
+            Cuando el sistema alcanza el equilibrio, el resorte se ha estirado 61 cm debido al peso del objeto. Luego, se estira el objeto hasta una posición 
+            40 cm por debajo del punto de equilibrio y se suelta, permitiendo que el objeto oscile libremente.</p>
+
+            <h2>Queremos resolver las siguientes cuestiones:</h2>
+            <ul>
+                <li><strong>Constante del resorte</strong>: ¿Cuál es el valor de la constante de elasticidad <em>k</em> del resorte?</li>
+                <li><strong>Posición del objeto después de 10 segundos</strong>: Si el objeto se suelta desde una posición 40 cm debajo del punto de equilibrio, ¿cuál será su posición respecto al punto de equilibrio transcurridos 10 segundos?</li>
+                <li><strong>Velocidad del objeto en ese instante</strong>: ¿Cuál será la velocidad del objeto en el momento en que ha pasado ese tiempo?</li>
+            </ul>
+
+            <h2>Datos Iniciales y Condiciones</h2>
+            <div class="data">
+                <p>Del problema tenemos los siguientes datos:</p>
+                <ul>
+                    <li><strong>Masa del objeto</strong> (<em>m</em>): 15 kg</li>
+                    <li><strong>Peso del objeto</strong>: \(W = mg = 15 \, \text{kg} \times 9.8 \, \text{m/s}^2\)</li>
+                    <li><strong>Desplazamiento inicial de equilibrio</strong>: 0.61 m</li>
+                    <li><strong>Desplazamiento inicial de oscilación</strong>: 0.40 m por debajo del punto de equilibrio</li>
+                </ul>
+            </div>
+
+            <embed src="docs/ejercicio1.pdf" type="application/pdf" width="100%" height="300px" />
+        </div>
+
+        <div class="container">
+            <h1>Ejercicio 2</h1>
+            <p>Un resorte cuelga verticalmente; su extremo superior está fijo y del inferior pende una caja que pesa 196 N. Una vez en equilibrio, se tira de la caja hacia abajo haciéndola desplazar 0.25 m y se suelta. Sabemos que:</p>
+            <ul>
+                <li>Constante del resorte \( k = 80 \, \text{N/m} \)</li>
+                <li>Resistencia del aire proporcional a la velocidad, dada por \( F_{\text{resistencia}} = 4v \)</li>
+            </ul>
+            <p>Queremos encontrar:</p>
+            <ol>
+                <li>La <strong>ley de movimiento</strong> de la caja.</li>
+                <li>El <strong>tiempo necesario</strong> para que la caja se desplace desde la posición inicial hasta 0.0625 m por debajo de la posición de equilibrio.</li>
+            </ol>
+
+            <h2>1. Datos Iniciales y Condiciones</h2>
+            <p>Del problema tenemos:</p>
+            <ul>
+                <li>Peso de la caja: \( P = 196 \, \text{N} \)</li>
+                <li>Constante del resorte: \( k = 80 \, \text{N/m} \)</li>
+                <li>Desplazamiento inicial: \( x(0) = -0.25 \, \text{m} \)</li>
+            </ul>
+            <embed src="docs/ejercicio2 .pdf" type="application/pdf" width="100%" height="300px" />
+        </div>
+    </div>
+
+    <div style="display: flex;" class="general" id="conclusion">
+        <div style="margin: 20px; align-items:center;">
+        <h1 style="color: rgb(230, 174, 54); margin:10px;" >Conclusión</h1>
+            <div style="display:flex; flex-direction: column;">
+                <img src="docs/masac.jpg" style="margin:5px;">
+
+                <img src="docs/largo.jpg" alt="" style="width: 320px; margin:5px;">
+            </div>
+        </div>
+        <div>
+            <p>El análisis del sistema masa-resorte expuesto en este estudio resalta la importancia de las leyes fundamentales de la física, como la Ley de Hooke y el Movimiento Armónico Simple, en la comprensión de fenómenos oscilatorios. A través de la aplicación de principios matemáticos y físicos, como las ecuaciones diferenciales y la transformada de Laplace, se puede obtener una descripción precisa del comportamiento dinámico del sistema.
+            </p>
+            <p>En particular, la solución de los problemas permitió determinar parámetros esenciales, como la constante de elasticidad del resorte y las características de la oscilación del objeto (posición y velocidad en instantes específicos). Esto ilustra la utilidad práctica de las herramientas matemáticas para resolver problemas complejos y predecir el comportamiento de sistemas físicos.
+            </p>
+            <p>Al calcular la constante de elasticidad k, determinamos que el resorte responde de manera proporcional al peso del objeto. Este valor es fundamental para entender la rigidez del resorte y su capacidad para soportar cargas adicionales sin deformarse permanentemente.</p>
+            <br>
+            <p>Estos ejercicios no solo demuestra principios fundamentales de la física, como la ley de Hooke y el movimiento oscilatorio, sino que también destaca la importancia de los cálculos precisos en la predicción del comportamiento de sistemas mecánicos.</p>
+            <p>Finalmente, este tipo de análisis es crucial en diversas aplicaciones de ingeniería y tecnología, donde se requiere un control preciso de las vibraciones y la estabilidad estructural. La comprensión y el modelado de sistemas oscilatorios contribuyen al desarrollo de soluciones eficientes en campos como la mecánica, la acústica, y la ingeniería estructural.</p>
+        </div>
+    </div>
+
+    <div class="container" id="apa">
+        <h1>Bibliografía</h1>
+        <ul>
+
+            <li>joaquin10. (2021, 17 marzo). Solución de un sistema mecánico (masa - resorte) utilizando el enfoque de Laplace [Vídeo]. YouTube.<a href="https://www.youtube.com/watch?v=-b4BfxvaIG0"> https://www.youtube.com/watch?v=-b4BfxvaIG0</a></li>
+
+            <li>KM Plus. (2020, 21 agosto). EDO -46. Movimiento libre amortiguado. Sobreamortiguado. No 23. Sección 5.1. Dennis G. Zill [Vídeo]. YouTube. <a href="https://www.youtube.com/watch?v=iApPMUokZxc">https://www.youtube.com/watch?v=iApPMUokZxc</a></li>
+
+            <li>MateFacil. (2018, 27 noviembre). Aplicación de EDO: Sistema masa resorte vertical, usando Laplace [Vídeo]. YouTube. <a href="https://www.youtube.com/watch?v=dMFoAEfnMCM">https://www.youtube.com/watch?v=dMFoAEfnMCM </a></li>
+
+            <li>MateFacil. (2018a, octubre 18). Aplicación de EDO: Sistema masa resorte [Vídeo]. YouTube. <a href="https://www.youtube.com/watch?v=_yMyvtJnNUY">https://www.youtube.com/watch?v=_yMyvtJnNUY</a> </li>
+
+            <li>Saúl Olaf Loaiza Meléndez. (2020, 2 julio). Ecuaciones Diferenciales | Aplicación modelo masa-resorte. [Vídeo]. YouTube. <a href="https://www.youtube.com/watch?v=4Kdun34Hhuk"> https://www.youtube.com/watch?v=4Kdun34Hhuk </a></li>
+
+            <li>Sistema masa resorte. (2013b, mayo 11). Disfruta la Física.<a href=" https://drisfrutalaisica.wordpress.com/segundo-ciclo/eventos-ondulatorios/movimiento-armonico-simple/sistema-masa-resorte/"> https://drisfrutalaisica.wordpress.com/segundo-ciclo/eventos-ondulatorios/movimiento-armonico-simple/sistema-masa-resorte/</a></li>
+            
+            <li>Susi Profe. (2021, 14 abril). LEY de HOOKE  ♀️ Fuerza ELÁSTICA del muelle o Resorte [Vídeo]. YouTube. <a href="https://www.youtube.com/watch?v=npxZ-A2WSTo">https://www.youtube.com/watch?v=npxZ-A2WSTo</a></li>
+
+            <li>Strang, G., & Herman, E. “. (2022, 24 marzo). 7.3 Aplicaciones - Cálculo volumen 3 | OpenStax. <a href="https://openstax.org/books/c%C3%A1lculo-volumen-3/pages/7-3-aplicaciones">https://openstax.org/books/c%C3%A1lculo-volumen-3/pages/7-3-aplicaciones</a></li>
+
+            <li>Saúl Olaf Loaiza Meléndez. (s. f.). Aplicaciones de las ecuaciones diferenciales de segundo orden. <a href="https://sway.cloud.microsoft/g1wPBXrvrqVVzAig?ref=Link">https://sway.cloud.microsoft/g1wPBXrvrqVVzAig?ref=Link</a></li>
+            
+        </ul>
+    </div>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
